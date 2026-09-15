@@ -1,17 +1,272 @@
-header,footer{
-  background-color: gray;
+/* =========================
+   YLEISET ASETUKSET
+========================= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #111111;
+  color: #eeeeee;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  background: linear-gradient(
+    135deg,
+    #111111,
+    #2b2b2b,
+    #111111
+  );
+
+  padding: 60px 20px;
   text-align: center;
-  padding: 20px;
+
+  border-bottom: 3px solid #d4af37;
+
+  box-shadow: 0 5px 25px rgba(0, 0, 0, 0.7);
 }
-.project{
-  width: 600px;
-  background-color: darkkhaki;
-  border-radius: 5px;
-  margin: 10px;
-  padding: 10px;
+
+header h1 {
+  margin: 0;
+
+  font-size: 3.5rem;
+  letter-spacing: 4px;
+
+  color: #d4af37;
+
+  text-shadow:
+    0 0 10px rgba(212, 175, 55, 0.4),
+    0 0 25px rgba(212, 175, 55, 0.2);
 }
-.main{
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+
+
+/* =========================
+   OTSIKOT
+========================= */
+
+.main {
+  text-align: center;
+  padding: 45px 20px 15px;
+}
+
+h2 {
+  font-size: 2.2rem;
+  color: #d4af37;
+
+  text-align: center;
+
+  letter-spacing: 2px;
+
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+
+
+/* =========================
+   PROJEKTIKORTIT
+========================= */
+
+.project {
+  max-width: 900px;
+
+  margin: 30px auto;
+  padding: 30px;
+
+  background: linear-gradient(
+    145deg,
+    #202020,
+    #151515
+  );
+
+  border-radius: 15px;
+
+  border: 1px solid #555;
+
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.5);
+
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease;
+}
+
+
+/* Hover */
+
+.project:hover {
+  transform: translateY(-8px);
+
+  border-color: #d4af37;
+
+  box-shadow:
+    0 12px 35px rgba(212, 175, 55, 0.2);
+}
+
+
+/* =========================
+   PROJEKTIN OTSIKKO
+========================= */
+
+.project h3 {
+  margin-top: 0;
+
+  font-size: 1.7rem;
+
+  /* Hopea */
+  color: #c0c0c0;
+
+  letter-spacing: 1px;
+}
+
+
+/* =========================
+   TEKSTIT
+========================= */
+
+.project p {
+  color: #bbbbbb;
+}
+
+
+/* =========================
+   KUVAT
+========================= */
+
+.project img {
+  display: block;
+
+  width: 300px;
+  max-width: 100%;
+
+  margin: 25px 0;
+
+  border-radius: 10px;
+
+  border: 2px solid #8c6239;
+
+  box-shadow:
+    0 5px 15px rgba(0, 0, 0, 0.5);
+
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.03);
+}
+
+
+/* =========================
+   LINKKIPAINIKE
+========================= */
+
+.project a {
+  display: inline-block;
+
+  padding: 11px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #d4af37,
+    #b8860b
+  );
+
+  color: #111111;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: bold;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.project a:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+
+/* =========================
+   YHTEYSTIEDOT
+========================= */
+
+ul {
+  max-width: 600px;
+
+  margin: 0 auto 60px;
+
+  padding: 25px 35px;
+
+  background: #1c1c1c;
+
+  border-radius: 12px;
+
+  list-style: none;
+
+  border-left: 5px solid #d4af37;
+
+  box-shadow:
+    0 5px 20px rgba(0, 0, 0, 0.4);
+}
+
+li {
+  margin: 10px 0;
+
+  color: #cccccc;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  margin-top: 60px;
+
+  padding: 30px;
+
+  text-align: center;
+
+  background: #0a0a0a;
+
+  color: #888888;
+
+  border-top: 1px solid #555;
+}
+
+
+/* =========================
+   MOBIILI
+========================= */
+
+@media (max-width: 600px) {
+
+  header h1 {
+    font-size: 2.4rem;
+  }
+
+  .project {
+    margin: 20px 15px;
+    padding: 20px;
+  }
+
+  .project img {
+    width: 100%;
+  }
+
 }
